@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto+Mono:wght@300;400;700&family=Source+Sans+Pro&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+body{
+    background-color: #F5F5F5;
+}
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+}
+img{
+    width: 50px;
+}
+.night-mode{
+    border:none;
+    padding: 10px;
+}
+input{
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #ebecec;
+    border-radius: 10px;
+    width: 70%;
+}
+
+.input-box{
+    color: grey;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #efeff0;
+    background-color: #efeff0;
+}
+p{
+    font-size: 18px;
+    color: grey;
+}
+.btn{
+    border-radius: 10px;
+}
+#submit{
+    margin-left: 10px;
+}
+.gif{
+    width: 70%;
+    height: auto;
+    margin-left: 20px;
+}
+#result{
+    color: green;
+}
+.navbar-brand{
+    border-bottom: #F3CC00 solid 3px;
+}
+.dark-mode{
+    background-color: #051234;
+    color: white;  
+}
+

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shorty</title>
+
+    <!--link-->
+    <link rel="stylesheet" href="main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar container-fluid" >
+        <div class="container">
+            <h1 class="navbar-brand">Shorty</h1>
+            <img src="img/night-mode.png" alt="night mode" class="night-mode img" id="icon" onclick="darkmode()">
+        </div>
+    </nav>
+
+    <div class="container mt-3">
+        <h2>Your Url Shortener ^^</h2>
+        <div class="row mt-4">
+            <div class="col-md-6 input-box">
+                <h4>Paste the Url to be shortened</h4>
+                <input type="text" class="mt-2" id="user-input" name="url" placeholder="Enter your link ... " required>
+                <button class="btn btn-primary" id="submit" onclick="short()">Shorten Url</button>
+            </div>
+            <div class="col-4 d-flex justify-content-center">
+                <img src="img/earth.gif" alt="space" class="gif">
+            </div>
+        </div>
+        <div class="mt-5">
+            <h4><b>Shorten URL</b></h4>
+            <p>
+                Copy the shortened link and share it in messages, texts, posts, websites and other locations.
+            </p>
+            <div>
+                <b><h5 style="color: red;" id="error"></h5></b>
+                <h5><b>Your Shortend link : <span id="result"></span></b></h5>
+                <button class="btn btn-primary btn-copy mt-2" data-clipboard-target="#result">Copy</button>
+            </div>
+        </div>
+    </div>   
+   <!--links-->
+   <script src="https://unpkg.com/clipboard@2/dist/clipboard.min.js"></script>
+   <script src="main.js"></script>
+</body>
+</html>
